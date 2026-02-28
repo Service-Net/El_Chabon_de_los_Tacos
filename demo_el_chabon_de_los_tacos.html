@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Chabón de los Tacos - Sabor Real</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #27ae60; }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            /* Fondo: Textura de pizarra o calle con tacos coloridos */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                        url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 10px;
+            border-bottom: 8px solid #27ae60; /* Verde Mexicano */
+        }
+
+        .hero-content {
+            max-width: 700px;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-family: 'Permanent Marker', cursive;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            color: #e74c3c; /* Rojo Chile */
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            transform: rotate(-2deg); /* Efecto sticker/grafiti */
+            text-shadow: 3px 3px 0px #fff;
+        }
+
+        .hero-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #f1c40f; /* Amarillo Maíz */
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            line-height: 1.4;
+            color: #eee;
+        }
+
+        .cta-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-menu {
+            background-color: #27ae60;
+            color: white;
+            padding: 18px 30px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-order {
+            background-color: #fff;
+            color: #333;
+            padding: 18px 30px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-menu:hover { background-color: #219150; transform: scale(1.05); }
+        .btn-order:hover { background-color: #eee; transform: scale(1.05); }
+
+        .status-tag {
+            display: inline-block;
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid #e74c3c;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+        footer {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #ffffff;
+            margin: 0px;
+            z-index: 1;
+        }
+        footer a {
+            color: #0254b1;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 5px;
+           
+        }
+
+        @media (max-width: 600px) {
+            .cta-container { flex-direction: column; }
+
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="status-tag">🌮 El sabor que estabas buscando</div>
+            <h1>¡Tacos de Verdad!</h1>
+            <h2>Frescura Mexicana en cada bocado</h2>
+            <p>Preparados en el momento con ingredientes seleccionados. No es solo comida rápida, es pasión por el sabor.</p>
+            
+            <div class="cta-container">
+                <a href="#carta" class="btn-menu">Ver la Carta</a>
+                <a href="https://wa.me/TUNUMERO" class="btn-order">Pedir por WhatsApp</a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+            <p><b>Desarrollado por: SRVICE-NET Soluciones IT</b></p>
+            <a href="https://tweegio.github.io/Service-Net/" target="_blank"><b>CONTACTANOS</b></a>
+    </footer>
+</body>
+</html>
